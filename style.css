@@ -1,0 +1,47 @@
+:root{
+  --bg:#0f1115; --surface:#171a21;
+  --text:#e8eaed; --muted:#9aa0a6;
+  --accent:#c8482f; --border:#2a2f3a;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;}
+a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+header.site,footer.site,main{max-width:960px;margin:0 auto;padding:1rem 1.25rem}
+header.site{display:flex;align-items:baseline;gap:.75rem;
+  border-bottom:1px solid var(--border)}
+.brand{font-weight:700;font-size:1.25rem;color:var(--text)}
+.tagline{color:var(--muted);font-size:.9rem}
+h1{font-size:1.7rem;margin:.6rem 0} h2{font-size:1.2rem;margin-top:1.6rem}
+.crumbs{color:var(--muted);font-size:.85rem;margin:.5rem 0 1rem}
+.crumbs .sep{opacity:.5}
+.lede{color:var(--text)} .count,.fresh,.note,.fine,.evidence{color:var(--muted);font-size:.9rem}
+ul.hublist{list-style:none;padding:0;display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.5rem}
+ul.hublist li{background:var(--surface);border:1px solid var(--border);
+  border-radius:8px;padding:.6rem .8rem;display:flex;justify-content:space-between}
+ul.hublist .n{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:.8rem}
+.card{background:var(--surface);border:1px solid var(--border);
+  border-radius:8px;padding:.9rem}
+.card h3{margin:.1rem 0 .4rem;font-size:1.05rem}
+.addr,.lic{color:var(--muted);font-size:.9rem;margin:.2rem 0}
+.badges{margin:.4rem 0;display:flex;flex-wrap:wrap;gap:.35rem}
+.badge{font-size:.72rem;padding:.15rem .5rem;border-radius:999px;
+  border:1px solid var(--border)}
+.badge.ok{color:#7fd18a;border-color:#2f5a37}
+.badge.warn{color:#e0a04a;border-color:#5a4326}
+.badge.info{color:#7aa7e0;border-color:#2c456b}
+.badge.muted{color:var(--muted)}
+dl.lic dt{color:var(--muted);font-size:.8rem}
+dl.lic dd{margin:0 0 .5rem}
+.siblings{list-style:none;padding:0;columns:2;font-size:.95rem}
+.button{display:inline-block;background:var(--accent);color:#fff;
+  padding:.5rem .9rem;border-radius:6px;margin:.5rem 0}
+footer.site{border-top:1px solid var(--border);margin-top:2rem;color:var(--muted)}
+#age-gate{position:fixed;inset:0;background:rgba(0,0,0,.92);display:flex;
+  align-items:center;justify-content:center;z-index:99}
+#age-gate .age-box{background:var(--surface);border:1px solid var(--border);
+  padding:1.5rem;border-radius:10px;max-width:420px;text-align:center}
+#age-gate button{background:var(--accent);color:#fff;border:0;
+  padding:.6rem 1.1rem;border-radius:6px;cursor:pointer;margin-top:.5rem}
